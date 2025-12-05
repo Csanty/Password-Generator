@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: #6B7280;
+}
+
+.password-block {
+    align-content: center;
+    background-color: #ECFDF5;
+    width: 550px;
+    height: 550px;
+    padding: 50px;
+}
+
+#line1, #line2 {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 0px;
+}
+
+#line1 {
+    color: black;
+}
+
+#line2 {
+    color: #10B981;
+    margin-bottom: 30px;
+}
+
+#line3, button {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+button {
+    background-color: #10B981;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #73D4B4;
+}
+
+hr {
+   color: #D5D4D8;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.results-sec {
+    display: flex;
+    justify-content: space-between;
+}
+
+#first-password, #second-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    background-color: #273549;
+    color: #5DEF92;
+    width: 211px;
+    height: 39px;
+    border-radius: 5px;
+}
+
+#first-password {
+    margin-right: 10px;
+}
