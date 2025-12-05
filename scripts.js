@@ -16,15 +16,22 @@ const characters = ["A","B","C","D","E","F","G","H","I",
 let firstPassword = document.getElementById("first-password");
 let secondPassword = document.getElementById("second-password");
 
-function genPassword () {
+function startGenerator () {
+    const passwordLength = document.getElementById("pass-length").value;
+    const length = Number(passwordLength);
+
+    genPassword(length);
+}
+
+function genPassword (length) {
     firstPassword.textContent = "";
     secondPassword.textContent = "";
 
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < length; i++) {
         let randomIndex = Math.floor(Math.random() * characters.length)
         firstPassword.textContent += characters[randomIndex]
     }
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < length; i++) {
         let randomIndex = Math.floor(Math.random() * characters.length)
         secondPassword.textContent += characters[randomIndex]
     }
